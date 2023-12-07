@@ -1,5 +1,11 @@
-import './successModal.scss';
+"use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+require("./successModal.scss");
+var _jsxRuntime = require("react/jsx-runtime");
 /*
   @params text: string - text to display in modal
   @params isSuccessModalOpen: boolean - state to determine if modal is open
@@ -8,20 +14,25 @@ import './successModal.scss';
   @returns JSX
   * * *
   See more on useMountTransition hook in useMountTransition.jsx
-*/
-const SuccessModal = ({
-  text,
-  isSuccessModalOpen,
-  setIsSuccessModalOpen,
-  hasTransitionedIn
-}) => {
-  return /*#__PURE__*/React.createElement("div", {
-    className: `modal-overlay ${hasTransitionedIn && 'in'} ${isSuccessModalOpen ? 'active' : ''}`
-  }, /*#__PURE__*/React.createElement("div", {
-    className: `success-modal animated ${hasTransitionedIn && 'in'} ${isSuccessModalOpen && 'active'}`
-  }, /*#__PURE__*/React.createElement("p", null, text), /*#__PURE__*/React.createElement("span", {
-    onClick: () => setIsSuccessModalOpen(false),
-    className: "modal-close-text"
-  }, "Close")));
+*/const SuccessModal = _ref => {
+  let {
+    text,
+    isSuccessModalOpen,
+    setIsSuccessModalOpen,
+    hasTransitionedIn
+  } = _ref;
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    className: "modal-overlay ".concat(hasTransitionedIn && 'in', " ").concat(isSuccessModalOpen ? 'active' : ''),
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "success-modal animated ".concat(hasTransitionedIn && 'in', " ").concat(isSuccessModalOpen && 'active'),
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+        children: text
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+        onClick: () => setIsSuccessModalOpen(false),
+        className: "modal-close-text",
+        children: "Close"
+      })]
+    })
+  });
 };
-export default SuccessModal;
+var _default = exports.default = SuccessModal;
