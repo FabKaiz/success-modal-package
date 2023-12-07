@@ -1,6 +1,6 @@
 {
   "name": "success-modal-oc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -12,7 +12,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
-},
+  },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@babel/preset-react": "^7.23.3",
