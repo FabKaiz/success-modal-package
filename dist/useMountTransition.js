@@ -1,5 +1,10 @@
-import { useEffect, useState } from "react";
+"use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = require("react");
 /*
   @params: isMounted: boolean - state to determine if component is mounted
   @params: unmountDelay: number - delay in milliseconds to unmount component
@@ -11,8 +16,8 @@ import { useEffect, useState } from "react";
 */
 
 const useMountTransition = (isMounted, unmountDelay) => {
-  const [hasTransitionedIn, setHasTransitionedIn] = useState(false);
-  useEffect(() => {
+  const [hasTransitionedIn, setHasTransitionedIn] = (0, _react.useState)(false);
+  (0, _react.useEffect)(() => {
     let timeoutId;
     if (isMounted && !hasTransitionedIn) {
       setHasTransitionedIn(true);
@@ -25,4 +30,4 @@ const useMountTransition = (isMounted, unmountDelay) => {
   }, [unmountDelay, isMounted, hasTransitionedIn]);
   return hasTransitionedIn;
 };
-export default useMountTransition;
+var _default = exports.default = useMountTransition;
