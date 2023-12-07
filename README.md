@@ -69,4 +69,4 @@ npm i success-modal-oc
 
 ## Example
 
-Check the provided ![example](https://i.ibb.co/SvrBt83/example.png) for a simple implementation of the `SuccessModal` component.
+![example](https://i.ibb.co/SvrBt83/example.png) 
