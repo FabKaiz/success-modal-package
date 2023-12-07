@@ -5,8 +5,7 @@ ability to control its visibility.
 
 ## Installation
 
-Make sure you have [React](https://reactjs.org/), [React DOM](https://reactjs.org/docs/react-dom.html)
-and [Sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) installed in your project.
+Make sure you have [React](https://reactjs.org/), [React DOM](https://reactjs.org/docs/react-dom.html) installed in your project.
 You can install this component using npm:
 
 ```bash
@@ -15,12 +14,11 @@ npm i success-modal-oc
 
 ## Usage
 
-1. **Import the `SuccessModal`, `useMountTransition` and `useState` component into your React application:**
+1. **Simply import the `SuccessModal` component and the `useMountTransition` custom hook into your React application:**
 
     ```jsx
-    import { useState } from 'react';
-    import SuccessModal from './path/to/SuccessModal';
-    import useMountTransition from './path/to/useMountTransition';
+    import SuccessModal from "success-modal-oc/dist/successModal.js";
+    import useMountTransition from "success-modal-oc/dist/useMountTransition.js";
     ```
 
 2. **Create a state variable to control the modal's visibility:**
